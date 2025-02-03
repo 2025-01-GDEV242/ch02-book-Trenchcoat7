@@ -12,28 +12,38 @@ class Book
     private String author;
     private String title;
     private int pages;
-
-    /**
-     * Set the author and title fields when this object
-     * is constructed.
-     */
+    private String refNumber;
+    
     public Book(String bookAuthor, String bookTitle, int bookPages)
     {
         author = bookAuthor;
         title = bookTitle;
         pages = bookPages;
+        refNumber = "";
     }
-
-    private String getAuthor(String author){
+    
+    public void setRefNumber(String ref){
+    
+        refNumber = ref;
+    
+    }
+    
+    public String getAuthor(String author){
     
         return author;
         
     }
     
-    private String getTitle(String title){
+    public String getTitle(String title){
     
         return title;
         
+    }
+    
+    public String getRefNumber(){
+    
+        return refNumber;
+    
     }
     
     private int getPages(int pages){
