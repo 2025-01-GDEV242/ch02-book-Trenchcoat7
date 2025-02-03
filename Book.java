@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber;
+    private int borrowed;
     
     public Book(String bookAuthor, String bookTitle, int bookPages)
     {
@@ -38,6 +39,12 @@ class Book
     
     }
     
+    public void borrow(int borrowed){
+    
+        borrowed += 1;
+    
+    }
+    
     public String getAuthor(String author){
     
         return author;
@@ -53,6 +60,12 @@ class Book
     public String getRefNumber(){
     
         return refNumber;
+    
+    }
+
+    public int getBorrowed(){
+    
+        return borrowed;
     
     }
     
@@ -88,6 +101,7 @@ class Book
         System.out.println("This book is called " + title + ".");
         System.out.println("It was written by " + author + ".");
         System.out.println("It is " + pages + " pages long.");
+        System.out.println("This book has been borrowed " + borrowed + " times.");
         
         int length = refNumber.length();
         
