@@ -62,4 +62,12 @@ class Book
         System.out.println("This book has " + pages + " pages.");
     
     }
+    
+    public void printAllDetails(){
+    
+        System.out.println("This book is called " + title + ".");
+        System.out.println("It was written by " + author + ".");
+        System.out.println("It is " + pages + " pages long.");
+    
+    }
 }
