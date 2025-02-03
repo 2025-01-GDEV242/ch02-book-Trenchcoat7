@@ -23,13 +23,20 @@ class Book
         refNumber = "";
     }
     
+    private void borrowedDefault(int borrowed){
+    
+        borrowed = 0;
+        
+    }
+    
     public void setRefNumber(String ref){
     
         refNumber = ref;
         
         int length = ref.length();
+        
         if(ref.length() >= 3){
-            
+            getRefNumber();
         }
         else {
             // invalid, prints an error method.
@@ -39,9 +46,9 @@ class Book
     
     }
     
-    public void borrow(int borrowed){
-    
-        borrowed += 1;
+    public void borrow(){
+        
+        borrowed ++;
     
     }
     
