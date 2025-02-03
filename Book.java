@@ -22,5 +22,29 @@ class Book
         title = bookTitle;
     }
 
-    // Add the methods here ...
+    private String getAuthor(String author){
+    
+        return author;
+        
+    }
+    
+    private String getTitle(String title){
+    
+        return title;
+        
+    }
+    
+    public void printAuthor()
+    {
+    
+        System.out.println("The author is " + author);
+    
+    }
+    
+    public void printTitle()
+    {
+    
+        System.out.println("The title is " + title);
+    
+    }
 }
