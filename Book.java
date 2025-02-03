@@ -27,12 +27,13 @@ class Book
         refNumber = ref;
         
         int length = ref.length();
-        if(ref.length() < 3){
-            System.out.println("Reference Numbers need to be at least");
-            System.out.println("3 characters long. Please try again.");
+        if(ref.length() >= 3){
+            
         }
         else {
-            getRefNumber();
+            // invalid, prints an error method.
+            System.out.println("Reference Numbers need to be at least");
+            System.out.println("3 characters long. Please try again.");
         }
     
     }
@@ -87,7 +88,13 @@ class Book
         System.out.println("This book is called " + title + ".");
         System.out.println("It was written by " + author + ".");
         System.out.println("It is " + pages + " pages long.");
-        System.out.println("Reference Number: " + refNumber);
+        
+        int length = refNumber.length();
+        
+        if(refNumber.length() <= 3){
+            refNumber = "ZZZ";
+        }
     
+        System.out.println("Reference Number: " + refNumber);
     }
 }
