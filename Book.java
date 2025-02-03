@@ -78,6 +78,7 @@ class Book
         System.out.println("This book is called " + title + ".");
         System.out.println("It was written by " + author + ".");
         System.out.println("It is " + pages + " pages long.");
+        System.out.println("Reference Number: " + refNumber);
     
     }
 }
